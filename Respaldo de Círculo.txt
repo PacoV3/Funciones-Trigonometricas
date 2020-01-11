@@ -1,0 +1,620 @@
+            // Para resolución de 1280 x 720
+            // La barra del título quita 40 pix por eso a la resolución max en y (maxresy) le quite 60
+            // 80 es la separación de los limites lateral izquierdo e inferior
+            // Si cambio el diametro que quiera se modifican los valores de cada función graficada con respecto al radio
+
+            int Ang = 45, Diameter = 400, Rad = Diameter/2, maxresx = 1280, maxresy = (720 - 40), minresx = 0, minresy = 0, xcartint = (minresy + 80), ycartint = (maxresy - 80);
+            double sin, cos, tan, cot, sec, csc;
+            float Sin, Cos, Tan, Cot, Sec, Csc, ysin, xcos, xtan, ycot, xsec, ycsc, xcart = (xcartint), ycart = (ycartint);
+
+            sin = Math.Sin(Ang * 2.0 * Math.PI / 360.0);
+            cos = Math.Cos(Ang * 2.0 * Math.PI / 360.0);
+            tan = Math.Tan(Ang * 2.0 * Math.PI / 360.0);
+            cot = (Math.Pow(tan, -1));
+            sec = (Math.Pow(cos, -1));
+            csc = (Math.Pow(sin, -1));
+
+            Sin = Convert.ToSingle(sin * Rad);
+            Cos = Convert.ToSingle(cos * Rad);
+            Tan = Convert.ToSingle(tan * Rad);
+            Cot = Convert.ToSingle(cot * Rad);
+            Sec = Convert.ToSingle(sec * Rad);
+            Csc = Convert.ToSingle(csc * Rad);
+
+            ysin = (ycart - Sin);
+            xcos = (xcart + Cos);
+            xtan = (xcart + Sec);
+            ycot = (ycart - Csc);
+            xsec = (xcart + Sec);
+            ycsc = (ycart - Csc);
+
+            Graphics g = paintEvent.Graphics;
+            base.OnPaint(paintEvent);
+
+            Pen LCartesian = new Pen(Color.DarkGray, 2);
+            Pen LCircle = new Pen(Color.DarkGray, 2);
+            Pen LArc = new Pen(Color.Goldenrod, 2);
+            Pen LRadius = new Pen(Color.Black, 2);
+
+            //Error en la ilustración si uso el "DrawLines"
+            //PointF[] points =
+            //{
+            //    new Point(40, 0),
+            //    new Point(40, 60),
+            //    new Point(0, 30),
+            //    new Point(80, 30)
+            //};
+            //g.DrawLines(Coord, points);
+
+            // Mitades y limites de la resolución total en la que quiero trabajar
+
+            // Eje X
+            g.DrawLine(LCartesian, (minresy), (maxresy - 80), (maxresx - 480), (maxresy - 80));
+            // Eje Y
+            g.DrawLine(LCartesian, (minresx +80), (minresy), (minresx + 80), (maxresy));
+            // Uso de Rectangle para trabajar más fácil, creación de la circunferencia
+            Rectangle rec = new Rectangle((xcartint - Rad), (ycartint - Rad), Diameter, Diameter);
+            g.DrawEllipse(LCircle, rec);
+
+            g.DrawArc(LArc, rec, 0, -90);
+            g.DrawLine(LRadius, xcart, ycart, xcos, ysin);
+
+            // Comienzan las Funciones Graficadas
+
+            Pen LSeno = new Pen(Color.Red, 2);
+            Pen LCoseno = new Pen(Color.Blue, 2);
+            Pen LTangente = new Pen(Color.Brown, 2);
+            Pen LCotangente = new Pen(Color.GreenYellow, 2);
+            Pen LSecante = new Pen(Color.Teal, 2);
+            Pen LCosecante = new Pen(Color.Magenta, 2);
+
+            // Seno y Coseno
+            g.DrawLine(LSeno, xcart, ycart, xcart, ysin);
+            g.DrawLine(LCoseno, xcart, ycart, xcos, ycart);
+            // Tangente y Cotangente
+            g.DrawLine(LTangente, xcos, ysin, xtan, ycart);
+            g.DrawLine(LCotangente, xcos, ysin, xcart, ycot);
+            // Secante y Cosecante
+            g.DrawLine(LSecante, xcart, ycart, xsec, ycart);
+            g.DrawLine(LCosecante, xcart, ycart, xcart, ycsc);
+
+            // Dibujos duplicados de Seno y Coseno
+            g.DrawLine(LSeno, xcos, ycart, xcos, ysin);
+            g.DrawLine(LCoseno, xcart, ysin, xcos, ysin);
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Plano_Círculo_Solos
+{
+    public partial class Form1 : Form
+    {
+        int Ang = 45, Diameter = 400;
+        string ScrollAngle;
+        bool State;
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        protected override void OnPaint(PaintEventArgs paintEvent)
+        {
+            // Para resolución de 1280 x 720
+            // La barra del título quita 40 pix por eso a la resolución max en y (maxresy) le quite 40
+            // 80 es la separación de los limites lateral izquierdo e inferior
+            // Si cambio el diametro que quiera se modifican los valores de cada función graficada con respecto al radio
+
+            int Rad = Diameter / 2, maxresx = 1280, maxresy = (720 - 40), minresx = 0, minresy = 0, xcartint = (minresy + 80), ycartint = (maxresy - 80);
+            double sin = 0, cos = 0, tan = 0, cot = 0, sec = 0, csc = 0;
+            float Sin, Cos, Tan, Cot, Sec, Csc, ysin, xcos, xtan, ycot, xsec, ycsc, xcartfloat = xcartint, ycartfloat = ycartint;
+
+
+                if (Ang > 0 && Ang < 90)
+                {
+                    sin = Math.Sin(Ang * 2.0 * Math.PI / 360.0);
+                    cos = Math.Cos(Ang * 2.0 * Math.PI / 360.0);
+                    tan = Math.Tan(Ang * 2.0 * Math.PI / 360.0);
+                    cot = (Math.Pow(tan, -1));
+                    sec = (Math.Pow(cos, -1));
+                    csc = (Math.Pow(sin, -1)); Sin = Convert.ToSingle(sin * Rad);
+                    Cos = Convert.ToSingle(cos * Rad);
+                    Tan = Convert.ToSingle(tan * Rad);
+                    Cot = Convert.ToSingle(cot * Rad);
+                    Sec = Convert.ToSingle(sec * Rad);
+                    Csc = Convert.ToSingle(csc * Rad);
+
+                    ysin = ycartfloat - Sin;
+                    xcos = xcartfloat + Cos;
+                    xtan = xcartfloat + Sec;
+                    ycot = ycartfloat - Csc;
+                    xsec = xcartfloat + Sec;
+                    ycsc = ycartfloat - Csc;
+
+                    //Graficar cosas básicas
+
+                    Graphics g = paintEvent.Graphics;
+                    base.OnPaint(paintEvent);
+
+                    Pen LCartesian = new Pen(Color.DarkGray, 2);
+                    Pen LCircle = new Pen(Color.DarkGray, 2);
+                    Pen LArc = new Pen(Color.Goldenrod, 2);
+                    Pen LRadius = new Pen(Color.Black, 2);
+
+                    // Mitades y limites de la resolución total en la que quiero trabajar
+                    // Eje X
+                    g.DrawLine(LCartesian, (minresy), (maxresy - 80), (maxresx - 480), (maxresy - 80));
+                    // Eje Y
+                    g.DrawLine(LCartesian, (minresx + 80), (minresy), (minresx + 80), (maxresy));
+                    // Uso de Rectangle para trabajar más fácil, creación de la circunferencia
+                    Rectangle rec = new Rectangle((xcartint - Rad), (ycartint - Rad), Diameter, Diameter);
+                    g.DrawEllipse(LCircle, rec);
+
+                    g.DrawArc(LArc, rec, 0, -90);
+                    g.DrawLine(LRadius, xcartfloat, ycartfloat, xcos, ysin);
+
+                    // Comienzan las Funciones Graficadas
+
+                    Pen LSeno = new Pen(Color.Red, 2);
+                    Pen LCoseno = new Pen(Color.Blue, 2);
+                    Pen LTangente = new Pen(Color.Brown, 2);
+                    Pen LCotangente = new Pen(Color.GreenYellow, 2);
+                    Pen LSecante = new Pen(Color.Teal, 2);
+                    Pen LCosecante = new Pen(Color.Magenta, 2);
+
+                    // Seno y Coseno
+                    g.DrawLine(LSeno, xcartfloat, ycartfloat, xcartfloat, ysin);
+                    g.DrawLine(LCoseno, xcartfloat, ycartfloat, xcos, ycartfloat);
+                    // Tangente y Cotangente
+                    g.DrawLine(LTangente, xcos, ysin, xtan, ycartfloat);
+                    g.DrawLine(LCotangente, xcos, ysin, xcartfloat, ycot);
+                    // Secante y Cosecante
+                    g.DrawLine(LSecante, xcartfloat, ycartfloat, xsec, ycartfloat);
+                    g.DrawLine(LCosecante, xcartfloat, ycartfloat, xcartfloat, ycsc);
+
+                    // Dibujos duplicados de Seno y Coseno
+                    g.DrawLine(LSeno, xcos, ycartfloat, xcos, ysin);
+                    g.DrawLine(LCoseno, xcartfloat, ysin, xcos, ysin);
+                }
+                else
+                {
+                    if (Ang == 0)
+                    {
+                        sin = 0;
+                        cos = Math.Cos(Ang * 2.0 * Math.PI / 360.0);
+                        tan = 0;
+                        cot = 0;
+                        sec = (Math.Pow(cos, -1));
+                        csc = 0;
+                        Sin = Convert.ToSingle(sin * Rad);
+                        Cos = Convert.ToSingle(cos * Rad);
+                        Tan = Convert.ToSingle(tan * Rad);
+                        Cot = Convert.ToSingle(cot * Rad);
+                        Sec = Convert.ToSingle(sec * Rad);
+                        Csc = Convert.ToSingle(csc * Rad);
+
+                        ysin = ycartfloat - Sin;
+                        xcos = xcartfloat + Cos;
+                        xtan = xcartfloat + Sec;
+                        ycot = ycartfloat - Csc;
+                        xsec = xcartfloat + Sec;
+                        ycsc = ycartfloat - Csc;
+
+                        //Graficar cosas básicas
+
+                        Graphics g = paintEvent.Graphics;
+                        base.OnPaint(paintEvent);
+
+                        Pen LCartesian = new Pen(Color.DarkGray, 2);
+                        Pen LCircle = new Pen(Color.DarkGray, 2);
+                        Pen LArc = new Pen(Color.Goldenrod, 2);
+                        Pen LRadius = new Pen(Color.Black, 2);
+
+                        // Mitades y limites de la resolución total en la que quiero trabajar
+                        // Eje X
+                        g.DrawLine(LCartesian, (minresy), (maxresy - 80), (maxresx - 480), (maxresy - 80));
+                        // Eje Y
+                        g.DrawLine(LCartesian, (minresx + 80), (minresy), (minresx + 80), (maxresy));
+                        // Uso de Rectangle para trabajar más fácil, creación de la circunferencia
+                        Rectangle rec = new Rectangle((xcartint - Rad), (ycartint - Rad), Diameter, Diameter);
+                        g.DrawEllipse(LCircle, rec);
+
+                        g.DrawArc(LArc, rec, 0, -90);
+                        g.DrawLine(LRadius, xcartfloat, ycartfloat, xcos, ysin);
+
+                        // Comienzan las Funciones Graficadas
+
+                        Pen LSeno = new Pen(Color.Red, 2);
+                        Pen LCoseno = new Pen(Color.Blue, 2);
+                        Pen LTangente = new Pen(Color.Brown, 2);
+                        Pen LCotangente = new Pen(Color.GreenYellow, 2);
+                        Pen LSecante = new Pen(Color.Teal, 2);
+                        Pen LCosecante = new Pen(Color.Magenta, 2);
+
+                        // Seno y Coseno
+                        g.DrawLine(LSeno, xcartfloat, ycartfloat, xcartfloat, ysin);
+                        g.DrawLine(LCoseno, xcartfloat, ycartfloat, xcos, ycartfloat);
+                        // Tangente y Cotangente
+                        g.DrawLine(LTangente, xcos, ysin, xtan, ycartfloat);
+                        g.DrawLine(LCotangente, xcos, ysin, xcartfloat, ycot);
+                        // Secante y Cosecante
+                        g.DrawLine(LSecante, xcartfloat, ycartfloat, xsec, ycartfloat);
+                        g.DrawLine(LCosecante, xcartfloat, ycartfloat, xcartfloat, ycsc);
+
+                        // Dibujos duplicados de Seno y Coseno
+                        g.DrawLine(LSeno, xcos, ycartfloat, xcos, ysin);
+                        g.DrawLine(LCoseno, xcartfloat, ysin, xcos, ysin);
+                    }
+                    else
+                    {
+                        sin = Math.Sin(Ang * 2.0 * Math.PI / 360.0);
+                        cos = 0;
+                        tan = 0;
+                        cot = 0;
+                        sec = 0;
+                        csc = (Math.Pow(sin, -1));
+                        Sin = Convert.ToSingle(sin * Rad);
+                        Cos = Convert.ToSingle(cos * Rad);
+                        Tan = Convert.ToSingle(tan * Rad);
+                        Cot = Convert.ToSingle(cot * Rad);
+                        Sec = Convert.ToSingle(sec * Rad);
+                        Csc = Convert.ToSingle(csc * Rad);
+
+                        ysin = ycartfloat - Sin;
+                        xcos = xcartfloat + Cos;
+                        xtan = xcartfloat + Sec;
+                        ycot = ycartfloat - Csc;
+                        xsec = xcartfloat + Sec;
+                        ycsc = ycartfloat - Csc;
+
+                        //Graficar cosas básicas
+
+                        Graphics g = paintEvent.Graphics;
+                        base.OnPaint(paintEvent);
+
+                        Pen LCartesian = new Pen(Color.DarkGray, 2);
+                        Pen LCircle = new Pen(Color.DarkGray, 2);
+                        Pen LArc = new Pen(Color.Goldenrod, 2);
+                        Pen LRadius = new Pen(Color.Black, 2);
+
+                        // Mitades y limites de la resolución total en la que quiero trabajar
+                        // Eje X
+                        g.DrawLine(LCartesian, (minresy), (maxresy - 80), (maxresx - 480), (maxresy - 80));
+                        // Eje Y
+                        g.DrawLine(LCartesian, (minresx + 80), (minresy), (minresx + 80), (maxresy));
+                        // Uso de Rectangle para trabajar más fácil, creación de la circunferencia
+                        Rectangle rec = new Rectangle((xcartint - Rad), (ycartint - Rad), Diameter, Diameter);
+                        g.DrawEllipse(LCircle, rec);
+
+                        g.DrawArc(LArc, rec, 0, -90);
+                        g.DrawLine(LRadius, xcartfloat, ycartfloat, xcos, ysin);
+
+                        // Comienzan las Funciones Graficadas
+
+                        Pen LSeno = new Pen(Color.Red, 2);
+                        Pen LCoseno = new Pen(Color.Blue, 2);
+                        Pen LTangente = new Pen(Color.Brown, 2);
+                        Pen LCotangente = new Pen(Color.GreenYellow, 2);
+                        Pen LSecante = new Pen(Color.Teal, 2);
+                        Pen LCosecante = new Pen(Color.Magenta, 2);
+
+                        // Seno y Coseno
+                        g.DrawLine(LSeno, xcartfloat, ycartfloat, xcartfloat, ysin);
+                        g.DrawLine(LCoseno, xcartfloat, ycartfloat, xcos, ycartfloat);
+                        // Tangente y Cotangente
+                        g.DrawLine(LTangente, xcos, ysin, xtan, ycartfloat);
+                        g.DrawLine(LCotangente, xcos, ysin, xcartfloat, ycot);
+                        // Secante y Cosecante
+                        g.DrawLine(LSecante, xcartfloat, ycartfloat, xsec, ycartfloat);
+                        g.DrawLine(LCosecante, xcartfloat, ycartfloat, xcartfloat, ycsc);
+
+                        // Dibujos duplicados de Seno y Coseno
+                        g.DrawLine(LSeno, xcos, ycartfloat, xcos, ysin);
+                        g.DrawLine(LCoseno, xcartfloat, ysin, xcos, ysin);
+                    }
+                }
+            }
+        
+        
+        private void trackBarforAngle_Scroll(object sender, EventArgs e)
+        {
+            label1.Text = trackBarforAngle.Value.ToString();
+            ScrollAngle = trackBarforAngle.Value.ToString();
+            Ang = Int32.Parse(ScrollAngle);
+        }
+
+        private void Next_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void Ingre_Click(object sender, EventArgs e)
+        {
+            State = true;
+        }
+    }
+}
+
+
+            int i, meses = 12;
+            float N, Ce, S, G, P, Ca, sumN = 0, sumCe = 0, sumS = 0, sumG = 0, sumP = 0, sumCa = 0, pn, pce, ps, pg, pp, pca;
+
+            for (i = 1; i <= meses; i++)
+            {
+                Console.Write("Datos Norte");
+                Console.Write("Teclea la temperatura del mes " + i + " :");
+                N = Convert.ToSingle(Console.ReadLine());
+                sumN = sumN + N;
+            }
+            for (i = 1; i <= meses; i++)
+            {
+                Console.Write("Datos Centro");
+                Console.Write("Teclea la temperatura del mes:  " + i + " :");
+                Ce = Convert.ToSingle(Console.ReadLine());
+                sumCe = sumCe + Ce;
+            }
+            for (i = 1; i <= meses; i++)
+            {
+                Console.Write("Datos Sur");
+                Console.Write("Teclea la temperatura del mes  " + i + " :");
+                S = Convert.ToSingle(Console.ReadLine());
+                sumS = sumS + S;
+            }
+            for (i = 1; i <= meses; i++)
+            {
+                Console.Write("Datos Golfo");
+                Console.Write("Teclea la temperatura del mes  " + i + " :");
+                G = Convert.ToSingle(Console.ReadLine());
+                sumG = sumG + G;
+            }
+            for (i = 1; i <= meses; i++)
+            {
+                Console.Write("Datos Pacifico");
+                Console.Write("Teclea la temperatura del mes  " + i + " :");
+                P = Convert.ToSingle(Console.ReadLine());
+                sumP = sumP + P;
+            }
+            for (i = 1; i <= meses; i++)
+            {
+                Console.Write("Datos Caribe");
+                Console.Write("Teclea la temperatura del mes  " + i + " :");
+                Ca = Convert.ToSingle(Console.ReadLine());
+                sumN = sumN + Ca;
+            }
+
+            pn = sumN / meses;
+            pce = sumCe  / meses;
+            ps = sumS / meses;
+            pg = sumG / meses;
+            pp = sumP / meses;
+            pca = sumCa / meses;
+
+            if (pn > pce && pn > ps && pn > pg && pn > pp && pn > pca)
+            {
+                Console.WriteLine("PN es la mayor con: " + pn);
+
+                if (pce < ps && pce < pg && pce < pp && pce < pca)
+                {
+                    Console.WriteLine("PCE es la menor con: " + pce);
+                }
+                else
+                {
+                    if (ps < pg && ps < pp && ps < pca)
+                    {
+                        Console.WriteLine("PS es la menor con: " + ps);
+                    }
+                    else
+                    {
+                        if (pg < pp && pg < pca)
+                        {
+                            Console.WriteLine("PG es la menor con: " + pg);
+                        }
+                        else
+                        {
+                            if (pp < pca)
+                                Console.WriteLine("PP es la menor con: " + pp);
+                            else
+                                Console.WriteLine("PCA es la menor con :" + pca);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                if (pce > ps && pce > pg && pce > pp && pce > pca)
+                {
+                    Console.WriteLine("PCE es la mayor con: " + pce);
+
+                    if (pn < ps && pn < pg && pn < pp && pn < pca)
+                    {
+                        Console.WriteLine("PN es la menor con: " + pn);
+                    }
+                    else
+                    {
+                        if (ps < pg && ps < pp && ps < pca)
+                        {
+                            Console.WriteLine("PS es la menor con: " + ps);
+                        }
+                        else
+                        {
+                            if (pg < pp && pg < pca)
+                            {
+                                Console.WriteLine("PG es la menor con: " + pg);
+                            }
+                            else
+                            {
+                                if (pp < pca)
+                                {
+                                    Console.WriteLine("PP es la menor con: " + pp);
+                                }
+                                else
+                                {
+                                    Console.WriteLine("PCA es la menor con: " + pca);
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    if (ps > pg && ps > pp && ps > pca)
+                    {
+                        Console.WriteLine("PS es la mayor con: " + ps);
+
+                        if (pn < pce && pn < pg && pn < pp && pn < pca)
+                        {
+                            Console.WriteLine("PN es la menor con: " + pn);
+                        }
+                        else
+                        {
+                            if (pce < pg && pce < pp && pce < pca)
+                            {
+                                Console.WriteLine("PCE es la menor con: " + pce);
+                            }
+                            else
+                            {
+                                if (pg < pp && pg < pca)
+                                {
+                                    Console.WriteLine("PG es la menor con: " + pg);
+                                }
+                                else
+                                {
+                                    if (pp < pca)
+                                    {
+                                        Console.WriteLine("PP es la menor con: " + pp);
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("PCA es la menor con: " + pca);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (pg > pp && pg > pca)
+                        {
+                            Console.WriteLine("PG es la mayor con: " + pg);
+
+                            if (pn < pce && pn < ps && pn < pp && pn < pca)
+                            {
+                                Console.WriteLine("PN es la menor con: " + pn);
+                            }
+                            else
+                            {
+                                if (pce < ps && pce < pp && pce < pca)
+                                {
+                                    Console.WriteLine("PCE es la menor con: " + pce);
+                                }
+                                else
+                                {
+                                    if (ps < pp && ps < pca)
+                                    {
+                                        Console.WriteLine("PG es la menor con: " + pg);
+                                    }
+                                    else
+                                    {
+                                        if (pp < pca)
+                                        {
+                                            Console.WriteLine("PP es la menor con: " + pp);
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("PCA es la menor con: " + pca);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if (pp > pca)
+                            {
+                                Console.WriteLine("PP es la mayor con: " + pp);
+
+                                if (pn < pce && pn < ps && pn < pg && pn < pca)
+                                {
+                                    Console.WriteLine("PN es la menor con: " + pn);
+                                }
+                                else
+                                {
+                                    if (pce < ps && pce < pg && pce < pca)
+                                    {
+                                        Console.WriteLine("PCE es la menor con: " + pce);
+                                    }
+                                    else
+                                    {
+                                        if (ps < pg && ps < pca)
+                                        {
+                                            Console.WriteLine("PS es la menor con: " + ps);
+                                        }
+                                        else
+                                        {
+                                            if (pg < pca)
+                                            {
+                                                Console.WriteLine("PG es la menor con: " + pg);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("PCA es la menor con: " + pca);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("PCA es la mayor con: " + pca);
+
+                                if (pn < pce && pn < ps && pn < pg && pn < pp)
+                                {
+                                    Console.WriteLine("PN es la menor con: " + pn);
+                                }
+                                else
+                                {
+                                    if (pce < ps && pce < pg && pce < pp)
+                                    {
+                                        Console.WriteLine("PCE es la menor con: " + pce);
+                                    }
+                                    else
+                                    {
+                                        if (ps < pg && ps < pp)
+                                        {
+                                            Console.WriteLine("PS es la menor con: " + ps);
+                                        }
+                                        else
+                                        {
+                                            if (pg < pp)
+                                            {
+                                                Console.WriteLine("PG es la menor con: " + pg);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("PCA es la menor con: " + pp);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            Console.WriteLine("El promedio anual Norte es: " + sumN);
+            Console.WriteLine("El promedio anual Centro es: " + sumCe);
+            Console.WriteLine("El promedio anual Sur es: " + sumS);
+            Console.WriteLine("El promedio anual Golfo es: " + sumG);
+            Console.WriteLine("El promedio anual Pacifico es: " + sumP);
+            Console.WriteLine("El promedio anual Caribe es: " + sumCa);
+
+            Console.ReadLine();

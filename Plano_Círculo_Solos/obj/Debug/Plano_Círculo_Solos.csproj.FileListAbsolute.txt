@@ -1,0 +1,90 @@
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe.config
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.pdb
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csprojAssemblyReference.cache
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Form1.resources
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Properties.Resources.resources
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.GenerateResource.cache
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.CoreCompileInputs.cache
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.exe
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.pdb
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos - copia\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe.config
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos - copia\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos - copia\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.pdb
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos - copia\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csprojAssemblyReference.cache
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos - copia\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Form1.resources
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos - copia\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Properties.Resources.resources
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos - copia\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.GenerateResource.cache
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos - copia\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.CoreCompileInputs.cache
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos - copia\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.exe
+C:\Users\Jose\Desktop\Universidad\Programación\Plano_Círculo_Solos - copia\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.pdb
+C:\Users\Jose\Desktop\Universidad\Programación\Plano - Modificación para Panel\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe.config
+C:\Users\Jose\Desktop\Universidad\Programación\Plano - Modificación para Panel\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe
+C:\Users\Jose\Desktop\Universidad\Programación\Plano - Modificación para Panel\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.pdb
+C:\Users\Jose\Desktop\Universidad\Programación\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csprojAssemblyReference.cache
+C:\Users\Jose\Desktop\Universidad\Programación\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Form1.resources
+C:\Users\Jose\Desktop\Universidad\Programación\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Properties.Resources.resources
+C:\Users\Jose\Desktop\Universidad\Programación\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.GenerateResource.cache
+C:\Users\Jose\Desktop\Universidad\Programación\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.CoreCompileInputs.cache
+C:\Users\Jose\Desktop\Universidad\Programación\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.exe
+C:\Users\Jose\Desktop\Universidad\Programación\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.pdb
+C:\Users\Jose\Desktop\Plano - Modificación para Panel\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe.config
+C:\Users\Jose\Desktop\Plano - Modificación para Panel\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe
+C:\Users\Jose\Desktop\Plano - Modificación para Panel\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.pdb
+C:\Users\Jose\Desktop\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csprojAssemblyReference.cache
+C:\Users\Jose\Desktop\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Form1.resources
+C:\Users\Jose\Desktop\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Properties.Resources.resources
+C:\Users\Jose\Desktop\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.GenerateResource.cache
+C:\Users\Jose\Desktop\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.CoreCompileInputs.cache
+C:\Users\Jose\Desktop\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.exe
+C:\Users\Jose\Desktop\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.pdb
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe.config
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.pdb
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csprojAssemblyReference.cache
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Form1.resources
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Properties.Resources.resources
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.GenerateResource.cache
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.CoreCompileInputs.cache
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.exe
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.pdb
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe.config
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.pdb
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csprojAssemblyReference.cache
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Form1.resources
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Properties.Resources.resources
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.GenerateResource.cache
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.CoreCompileInputs.cache
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.exe
+C:\Users\Jose\Desktop\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.pdb
+C:\Users\PC\Desktop\Cosas de Lap\Universidad\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe.config
+C:\Users\PC\Desktop\Cosas de Lap\Universidad\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe
+C:\Users\PC\Desktop\Cosas de Lap\Universidad\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.pdb
+C:\Users\PC\Desktop\Cosas de Lap\Universidad\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Cosas de Lap\Universidad\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Form1.resources
+C:\Users\PC\Desktop\Cosas de Lap\Universidad\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Properties.Resources.resources
+C:\Users\PC\Desktop\Cosas de Lap\Universidad\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Cosas de Lap\Universidad\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Cosas de Lap\Universidad\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.exe
+C:\Users\PC\Desktop\Cosas de Lap\Universidad\Simulador 0.0.1\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.pdb
+C:\Users\PC\Desktop\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe.config
+C:\Users\PC\Desktop\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe
+C:\Users\PC\Desktop\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.pdb
+C:\Users\PC\Desktop\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Form1.resources
+C:\Users\PC\Desktop\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Properties.Resources.resources
+C:\Users\PC\Desktop\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.exe
+C:\Users\PC\Desktop\Plano - Modificación para Panel BUENO\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.pdb
+C:\Users\PC\Desktop\Proyectos Imp\Simulador\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe.config
+C:\Users\PC\Desktop\Proyectos Imp\Simulador\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.exe
+C:\Users\PC\Desktop\Proyectos Imp\Simulador\Plano_Círculo_Solos\bin\Debug\Plano_Círculo_Solos.pdb
+C:\Users\PC\Desktop\Proyectos Imp\Simulador\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Proyectos Imp\Simulador\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Form1.resources
+C:\Users\PC\Desktop\Proyectos Imp\Simulador\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.Properties.Resources.resources
+C:\Users\PC\Desktop\Proyectos Imp\Simulador\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\Proyectos Imp\Simulador\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Proyectos Imp\Simulador\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.exe
+C:\Users\PC\Desktop\Proyectos Imp\Simulador\Plano_Círculo_Solos\obj\Debug\Plano_Círculo_Solos.pdb
