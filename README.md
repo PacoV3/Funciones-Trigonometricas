@@ -3,7 +3,7 @@ El Simulador de Funciones Trigonométricas es un proyecto hecho con Windows Form
 
 La idea de este proyecto surgió de [Tattoos on Math](https://www.youtube.com/watch?v=IxNb1WG_Ido), un vídeo en donde se muestra la relación geométrica que tienen las funciones trigonométricas y es del canal de Youtube [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw).
 
- Este proyecto me ayudo a entender de una forma diferente el tema y me enseño la importancia de la investigación de nuevas tecnologías.
+ Este proyecto me ayudo a entender de una forma diferente el tema y me enseño la importancia de la investigación de diferentes tecnologías.
 
 # Herramientas utilizadas
 * GroupBoxes
